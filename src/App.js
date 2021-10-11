@@ -10,7 +10,7 @@ import Item from "./components/Item";
 import Loading from './components/Loading';
 
 //Style
-import './css/global.css';
+// import './css/global.css';
 
 
 
