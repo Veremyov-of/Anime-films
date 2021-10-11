@@ -3,13 +3,16 @@ import { useEffect } from "react";
 
 //Redux Actions
 import { asyncGetDataAction } from './store/asyncActions/asyncGetDataAction';
+import { sortingAction } from "./store/filmsReducer";
 
 //Components
 import Item from "./components/Item";
+import Loading from './components/Loading';
 
 //Style
 import './css/global.css';
-import { sortingAction } from "./store/filmsReducer";
+
+
 
 function App() {
   const films = useSelector(state => state.films);
@@ -25,6 +28,7 @@ function App() {
   return (
     <div>
       <button onClick={handleSorting} className="sorting">{films.switchItems ? 'All' : 'Only Likes'}</button>
+      <Loading />
       <div className="container">
         {
           films.switchItems ?

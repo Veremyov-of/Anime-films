@@ -3,6 +3,7 @@ const initialState = {
     allItems: [],
     likesItems: [],
     switchItems: true,
+    loading: false
 }
 
 const GET_DATA = 'GET_DATA';
@@ -10,6 +11,7 @@ const SORTING_DATA =  'SORTING_DATA';
 const LIKE = 'LIKE';
 const DELETE = 'DELETE';
 const SORTING = 'SORTING';
+const LOADING = 'LOADING';
 
 export const filmsReducer = (state = initialState, action) => {
     switch(action.type) {
@@ -69,6 +71,9 @@ export const filmsReducer = (state = initialState, action) => {
 
         case SORTING:
             return {...state, switchItems: !state.switchItems};
+
+        case LOADING:
+            return {...state, loading: !state.loading}
         
 
         default:
@@ -80,4 +85,5 @@ export const getDataAction = (payload) => ({ type: GET_DATA, payload });
 export const sortingDataAction = () => ({ type: SORTING_DATA });
 export const likeAction = (payload) => ({ type: LIKE, payload });
 export const deleteAction = (payload) => ({ type: DELETE, payload });
-export const sortingAction = () => ({ type: SORTING })
+export const sortingAction = () => ({ type: SORTING });
+export const loadingAction = () => ({ type: LOADING });
