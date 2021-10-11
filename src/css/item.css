@@ -79,7 +79,7 @@
 }
 
 .item-close:hover {
-    background: #A0CCD7;
+    background: #d7a0a0;
     transition: background .2s;
 }
 
@@ -97,13 +97,10 @@
     bottom: 0;
     right: 0;
     position: absolute;
-    transition: background .2s;
 }
 
-.item-like:hover {
-    /* background: #8AF9A2; */
-    background: #343F60;
-    transition: background .2s;
+.like-active {
+    background: #8AF9A2;
 }
 
 .item-btn:focus {
