@@ -29,11 +29,11 @@ function App() {
         {
           films.switchItems ?
            films.allItems.map((item, index) => 
-            <Item key={index} index={index} item={item} />): 
+            <Item key={index} item={item} />): 
           films.likesItems.length === 0 ? 
             <h1>Empty</h1>:
             films.likesItems.map((item, index) =>
-            <Item key={index} index={index} item={item} />
+            <Item key={index} item={item} />
           )
        }
       </div>

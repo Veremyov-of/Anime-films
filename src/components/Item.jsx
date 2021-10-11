@@ -9,11 +9,6 @@ import { deleteAction } from './../store/filmsReducer';
 export default function Item(props) {
     const dispatch = useDispatch();
     const info = props.item;
-    const index = props.index;
-
-    // const handleLike = () => {
-    //     dispatch(likeAction(index));
-    // }
 
     const handleLike = () => {
         dispatch(likeAction(info.title));
