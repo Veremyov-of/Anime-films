@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Anime-films/static/css/main.a84227cd.chunk.css",
-    "main.js": "/Anime-films/static/js/main.1b8f6f56.chunk.js",
-    "main.js.map": "/Anime-films/static/js/main.1b8f6f56.chunk.js.map",
+    "main.js": "/Anime-films/static/js/main.cd9aeb8c.chunk.js",
+    "main.js.map": "/Anime-films/static/js/main.cd9aeb8c.chunk.js.map",
     "runtime-main.js": "/Anime-films/static/js/runtime-main.626b7771.js",
     "runtime-main.js.map": "/Anime-films/static/js/runtime-main.626b7771.js.map",
     "static/js/2.95db18b0.chunk.js": "/Anime-films/static/js/2.95db18b0.chunk.js",
@@ -16,6 +16,6 @@
     "static/js/runtime-main.626b7771.js",
     "static/js/2.95db18b0.chunk.js",
     "static/css/main.a84227cd.chunk.css",
-    "static/js/main.1b8f6f56.chunk.js"
+    "static/js/main.cd9aeb8c.chunk.js"
   ]
 }
