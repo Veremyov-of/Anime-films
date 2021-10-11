@@ -1,0 +1,112 @@
+
+.item {
+    position: relative;
+    color: #fff;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    height: 400px;
+    background: linear-gradient(135deg, rgba(80, 193, 245, 0.5) 0%, rgba(247, 192, 237, 0.5) 100%);
+    backdrop-filter: blur(2px);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    transition: transform .2s;
+}
+
+.item:nth-child(even):hover {
+    transform:skew(-3deg, 3deg);
+    transition: transform .3s;
+}
+
+.item:nth-child(odd):hover {
+    transform:skew(3deg, -3deg);
+    transition: transform .2s;
+}
+
+/* .item:hover {
+   transform:skew(-3deg, 3deg);
+   transition: transform .3s;
+} */
+
+.item-img {
+    margin-top: 35px;
+    width: 150px;
+    height: 200px;
+}
+
+.item-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.item-title {
+    text-align: center;
+    letter-spacing: .05em;
+    margin-top: 15px;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.item-producer {
+    margin-top: 5px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 19px;
+}
+
+.item-date {
+    font-weight: 600;
+    font-size: 19px;
+}
+
+.item-close {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #84C0F8;
+    border: none;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 50px;
+    height: 50px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    transition: background .2s;
+}
+
+.item-close:hover {
+    background: #A0CCD7;
+    transition: background .2s;
+}
+
+.item-like {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2085ED;
+    border: none;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 50px;
+    height: 50px;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    transition: background .2s;
+}
+
+.item-like:hover {
+    /* background: #8AF9A2; */
+    background: #343F60;
+    transition: background .2s;
+}
+
+.item-btn:focus {
+    outline: none;
+  }
+
