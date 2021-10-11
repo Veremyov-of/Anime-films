@@ -33,22 +33,24 @@ export const filmsReducer = (state = initialState, action) => {
             }
             return {...state, allItems: result, data: []};
 
-        case LIKE: 
-            const index = action.payload;
+        case LIKE:
             const newState = state.allItems;
-
-            if(!newState[index].like) {
-                newState[index].like = true;
-                state.likesItems.push(newState[index]);
-            } else {
-                newState[index].like = false;
-                for(let i = 0; i < state.likesItems.length; i++) {
-                    if(newState[index] === state.likesItems[i]) {
-                        state.likesItems.splice(i, 1);
+            for(let i = 0; i < newState.length; i++) {
+                if(action.payload === newState[i].title) {
+                    newState[i].like = !newState[i].like;
+                    if(newState[i].like) {
+                        state.likesItems.push(newState[i]);
+                    } else {
+                        for(let i = 0; i < state.likesItems.length; i++) {
+                            if(action.payload === state.likesItems[i].title) {
+                                state.likesItems.splice(i, 1);
+                            }
+                        }
                     }
                 }
             }
-            return {...state, allItems: newState};
+            return {...state, allItems: newState}
+        
 
         case DELETE: 
             const indexDel = action.payload;

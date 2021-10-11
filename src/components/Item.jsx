@@ -11,8 +11,12 @@ export default function Item(props) {
     const info = props.item;
     const index = props.index;
 
+    // const handleLike = () => {
+    //     dispatch(likeAction(index));
+    // }
+
     const handleLike = () => {
-        dispatch(likeAction(index));
+        dispatch(likeAction(info.title));
     }
 
     const handleDelete = () => {
