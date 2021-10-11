@@ -53,16 +53,19 @@ export const filmsReducer = (state = initialState, action) => {
         
 
         case DELETE: 
-            const indexDel = action.payload;
             const newStateDel = state.allItems;
-            
+            for(let i = 0; i < newStateDel.length; i++) {
+                if(action.payload === newStateDel[i].title) {
+                    newStateDel.splice(i, 1);
+                }
+            }
             for(let i = 0; i < state.likesItems.length; i++) {
-                if(newStateDel[indexDel] === state.likesItems[i]) {
+                if(action.payload === state.likesItems[i].title) {
                     state.likesItems.splice(i, 1);
                 }
             }
-            newStateDel.splice(indexDel, 1);
-            return {...state, allItems: newStateDel};
+            return {...state, allItems: newStateDel}
+
 
         case SORTING:
             return {...state, switchItems: !state.switchItems};

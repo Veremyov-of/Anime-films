@@ -20,7 +20,7 @@ export default function Item(props) {
     }
 
     const handleDelete = () => {
-        dispatch(deleteAction(index))
+        dispatch(deleteAction(info.title))
     }
     return (
         <div className="item">
