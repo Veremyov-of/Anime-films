@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Anime-films/static/css/main.11522337.chunk.css",
+    "main.css": "/Anime-films/static/css/main.371f132f.chunk.css",
     "main.js": "/Anime-films/static/js/main.be937ad3.chunk.js",
     "main.js.map": "/Anime-films/static/js/main.be937ad3.chunk.js.map",
     "runtime-main.js": "/Anime-films/static/js/runtime-main.626b7771.js",
@@ -8,14 +8,14 @@
     "static/js/2.68c00992.chunk.js": "/Anime-films/static/js/2.68c00992.chunk.js",
     "static/js/2.68c00992.chunk.js.map": "/Anime-films/static/js/2.68c00992.chunk.js.map",
     "index.html": "/Anime-films/index.html",
-    "static/css/main.11522337.chunk.css.map": "/Anime-films/static/css/main.11522337.chunk.css.map",
+    "static/css/main.371f132f.chunk.css.map": "/Anime-films/static/css/main.371f132f.chunk.css.map",
     "static/js/2.68c00992.chunk.js.LICENSE.txt": "/Anime-films/static/js/2.68c00992.chunk.js.LICENSE.txt",
     "static/media/global.css": "/Anime-films/static/media/background.270a853e.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.626b7771.js",
     "static/js/2.68c00992.chunk.js",
-    "static/css/main.11522337.chunk.css",
+    "static/css/main.371f132f.chunk.css",
     "static/js/main.be937ad3.chunk.js"
   ]
 }
